@@ -176,69 +176,83 @@ main {
 
 @media only screen and (max-width:425px)
 {
-  
-.player {
-  flex: 50%;
-  size: 2vw;
-  padding: 9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: all 0.75s;
-}
+
+  main {
+    height: 60.9rem;
+    border-radius: 0px;
+    overflow:visible;
+    flex-direction: column;
+  }
+
+    .player {
+      flex: 50%;
+      padding: 1rem;
+      padding-top: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
 
 /* ELEMENTS */
 .name {
-  position: relative;
-  font-size: 4rem;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  word-spacing: 2px;
-  font-weight: 300;
-  margin-bottom: 1rem;
+  font-size: 1.7rem;
 }
 
 .score {
-  font-size: 8rem;
-  font-weight: 300;
-  color: #a200ff;
-  margin-bottom: auto;
-}
-
-.player--active {
-  background-image: linear-gradient(to top left, #f503e4 0%, #ff9500 100%);
-}
-.player--active .name {
-  font-weight: 700;
-}
-.player--active .score {
-  font-weight: 400;
-}
-
-.player--active .current {
-  opacity: 1;
-  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 30px;
 }
 
 .current {
-  background-color: #8629c9;
-  opacity: 0.8;
-  border-radius: 9px;
-  color: #fff;
-  width: 65%;
-  padding: 2rem;
-  text-align: center;
-  transition: all 0.75s;
+  padding: 1rem;
 }
 
 .current-label {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  font-size: 1.7rem;
-  color: #ddd;
+  font-size: 1.2rem;
 }
 
 .current-score {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
 }
+
+
+.btn {
+  font-size: 1.1rem;
+  padding: 0.4rem 2rem;
+}
+
+.btn--new {
+  top: 0rem;
+}
+
+.btn--roll {
+  top: 33rem;
+  left: 8rem;
+  width: 12rem;
+  padding: 2px;
+}
+
+.btn--hold {
+    top: 33rem;
+    left: 23rem;
+    width: 12rem;
+    padding: 2px;
+}
+
+.dice {
+  top: 27.3rem;
+  height: 4.5rem;
+}
+
+.player--1{
+  margin-top: 40px;
+}
+
+.player--0{
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+}
+
+
 }
